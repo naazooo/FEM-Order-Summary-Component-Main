@@ -1,0 +1,160 @@
+/* mobile */
+:root{
+    --bg-color: hsl(225, 100%, 94%);
+    --card-bg-color: white;
+    --price-bg: hsl(225, 100%, 98%);
+    --title-color: hsl(223, 47%, 23%);
+    --text-color: hsl(224, 23%, 55%);
+    --accent-color: hsl(245, 75%, 52%);
+
+}
+
+body{
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
+}
+
+#order_card{
+    max-width: 327px;
+    background-color: var(--card-bg-color);
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.text_content{
+    text-align: center;
+    padding: 0 2em;
+    
+}
+
+.main_title{
+    color: var(--title-color);
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 1.5em;
+}
+
+.main_desc{
+    color: var(--text-color);
+    margin: 1em 0;
+}
+
+.price_plan{
+    display: flex;
+    background-color: hsla(225, 100%, 94%, 0.409);
+    align-items: center;
+    padding: 1em;
+    border-radius: 12px;
+    font-size: 0.9em;
+    margin-top: -0.5em;
+}
+
+.price_title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-left: 1.4em;
+
+}
+
+.price{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.price_change{
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-left: auto;
+}
+
+.price_change:hover{
+    color: hsl(245deg 75% 52% / 66%);
+    text-decoration: none;
+}
+.all_buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    row-gap: 1.5em;
+    padding-bottom: 0.4em;
+}
+
+.bottom_sec{
+    padding: 1.4em;
+}
+
+.payment_btn{
+    background-color: var(--accent-color);
+    color: var(--card-bg-color);
+    font-weight: 900;
+    border: none;
+    padding: 1em;
+    border-radius: 12px;
+    font-size: 0.9em;
+    box-shadow: 0px 16px 16px 0px hsl(245deg 75% 52% / 20%);
+}
+
+.payment_btn:hover{
+    background-color: hsl(245deg 75% 52% / 66%);
+    cursor: pointer;
+}
+
+.cancel_btn{
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 900;
+    font-size: 0.95em;
+    text-decoration: none;
+}
+
+.cancel_btn:hover{
+    color: var(--title-color);
+}
+
+/* desktop */
+
+@media only screen and (min-width: 376px) {
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+    
+    }
+        
+    #order_card{
+        max-width: 450px;
+    }
+    
+    .text_content{
+        padding: 0 3em;
+    }
+
+    .bottom_sec{
+        padding: 3.2em;
+    }
+
+    .price_title{
+        font-size: 1.1em;
+    }
+
+    .price_plan{
+        padding: 1.7em;
+    }
+
+    .main_title{
+        font-size: 1.7em;
+    }
+
+    .main_desc{
+        margin-bottom: -1.5em;    
+    }
+    
+
+}
